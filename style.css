@@ -463,3 +463,71 @@ textarea{
   body{
     overflow-x: hidden;
   } */
+
+
+/*************************RESPONSIVE******************/
+
+/***********************PAGE ACCUEIL******************/
+@media (max-width: 992px) {
+    .texteGridPageAcc{
+        line-height: 20px;        
+    }
+    .titreGridPageAcc{
+        margin-left: 5%;       
+    }
+}
+/***********************PAGE GALERIE******************/
+@media (max-width: 992px) {
+    .photosGalerie{       
+        margin: 0% 5%;    
+    }
+    .photosGalerie > img{      
+        margin: 8%;
+    }   
+}
+/***********************PAGE NOTRE HISTOIRE******************/
+@media (max-width: 992px) {
+    .titrePresentation{
+        margin-bottom: 0%;
+    }
+    .textePresentation{
+        text-align: justify;
+    }
+    .qsnTextHaut > img{
+        width: 100%;
+        object-fit: fill;
+    }
+    .qsnTextHaut > p{
+        width: 90%;
+    }
+    .qsnTextHaut{     
+        margin: 0% 3%;
+    }
+    .qsnTextBas{
+        margin: 2% 5%;
+        line-height: 20px;
+    }
+   .qsnTextBas > div{
+        margin-left: 10%;
+        text-align: justify;
+   }
+   
+}
+/***********************PAGE CONTACT******************/
+@media (max-width: 992px) {
+    .ouNousTrouver{
+        margin: 3% 20%;
+    } 
+    .nosHorraires > p{
+        margin: 0% 10% 2% 10%;
+    }
+    .formContact{
+        margin: 5% 15% 2% 15%;
+    }
+    .formContact > input{
+        height: 30px;
+    }
+    .boutonContact{
+        font-size: 25px;
+    }
+}

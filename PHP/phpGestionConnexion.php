@@ -18,6 +18,7 @@ if($select->rowCount() === 1) {
     $_SESSION['utilisateur'] = $utilisateur;
     // Le header permet d'effectuer une requête HTTP, la valeur Location permet la redirection vers un autre fichier
     header('Location:'. $_POST['url_referer']);
+    
 }
 } else {
     unset($_SESSION['utilisateur']);
