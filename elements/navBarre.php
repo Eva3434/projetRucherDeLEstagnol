@@ -1,3 +1,8 @@
+<?php
+include('../PHP/connect.php');
+var_dump($_SESSION);
+
+?>
 
     <!------------------------NAV---------------------->
     <header>
@@ -8,5 +13,12 @@
         <a class="logo"><img src="../images/logo.png" class="logoNav" /></a>
         <a href="pageNotreHistoire.php">Notre Histoire</a>
         <a href="pageContact.php">Contact</a>
-        <button class="boutonConnexion">Connexion</button>
+        
+        <?php
+        if (isset($_SESSION['utilisateur'])) {
+          echo "Bonjour ".$_SESSION['utilisateur']['nom_utilisateur']." (Déconnexion)";
+        }else {
+          echo '<button class="boutonConnexion">Connexion</button>';
+        }?>
       </nav>
+
