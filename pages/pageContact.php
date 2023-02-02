@@ -1,7 +1,3 @@
-<?php
-  include('../PHP/connect.php');
-  $PAGE_PRECEDENTE = "pageContact.php";
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -18,19 +14,20 @@
 </head>
 
 <body>
-  <?php
-  /****************************MODALS*****************************/
-  include('../elements/modals.php');
-  /****************************NAVBARRE*****************************/
-  include('../elements/navBarre.php')
-  ?>
+  <header>
+    <?php
+    /****************************MODALS*****************************/
+    include('../elements/modals.php');
+    /****************************NAVBARRE*****************************/
+    include('../elements/navBarre.php')
+    ?>
 
-  <!----------------------SLIDE-------------------->
-  <section class="slide">
-    <div class="titres">
-      <div class="contact">Nous contacter</div>
-    </div>
-  </section>
+    <!----------------------SLIDE-------------------->
+    <section class="slide">
+      <div class="titres">
+        <div class="contact">Nous contacter</div>
+      </div>
+    </section>
   </header>
 
   <!----------------------CORPS-------------------->

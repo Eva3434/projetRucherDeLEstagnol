@@ -44,6 +44,15 @@ nav{
     padding: 0.8%;
     text-transform: uppercase;
 }
+.deconnexion{
+    font-size: 15px;
+    color: var(--white);
+    background-color: var(--navColor);
+    border-radius: 5px;
+    border: 2px solid var(--jaune);
+    padding: 0.8%;
+    text-transform: uppercase;
+}
 
 /********************HEADER************************/
 .imageFond {
@@ -383,15 +392,11 @@ textarea{
 .formModal > input{
     width: 70%;
     margin-bottom: 3%;
-    height: 20px;
+    height: 25px;
     border-radius: 20px;
     border: none;
 }
-.boutonModal{
-    width: 70%;
-    height: 30px;
-    border-radius: 20px;
-    border-color: var(--jauneClair);
+.boutonModal {       
     box-shadow: 0px 5px 5px gray;
     font-weight: bold;
     font-size: 20px;
@@ -417,7 +422,6 @@ textarea{
     transform: translate(-50%, -50%);
     background-color: var(--jaune);
     width: 50%;
-    padding: 5%;
     z-index: 11;
     font-size: 20px;
 }
@@ -438,7 +442,7 @@ textarea{
 .formInscription > input{
     width: 70%;
     margin-bottom: 3%;
-    height: 20px;
+    height: 25px;
     border-radius: 20px;
     border: none;
 }

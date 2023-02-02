@@ -14,19 +14,20 @@
 </head>
 
 <body>
-  <?php
-  /****************************MODALS*****************************/
-  include('../elements/modals.php');
-  /****************************NAVBARRE*****************************/
-  include('../elements/navBarre.php')
-  ?>
-  <!----------------------SLIDE-------------------->
-  <section class="slide">
-    <div class="titres">
-      <h1>Rucher de l'Estagnol</h1>
-      <h2>Apiculteur récoltant</h2>
-    </div>
-  </section>
+  <header>
+      <?php
+      /****************************MODALS*****************************/
+      include('../elements/modals.php');
+      /****************************NAVBARRE*****************************/
+      include('../elements/navBarre.php');
+      ?>
+    <!----------------------SLIDE-------------------->
+    <section class="slide">
+      <div class="titres">
+        <h1>Rucher de l'Estagnol</h1>
+        <h2>Apiculteur récoltant</h2>
+      </div>
+    </section>
   </header>
   <!------------------------CORPS---------------------->
   <section>

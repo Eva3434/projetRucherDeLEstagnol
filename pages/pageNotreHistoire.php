@@ -1,7 +1,3 @@
-<?php
-  include('../PHP/connect.php');
-  $PAGE_PRECEDENTE = "pageNotreHistoire.php";
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -18,19 +14,20 @@
 </head>
 
 <body>
-  <?php
-  /****************************MODALS*****************************/
-  include('../elements/modals.php');
-  /****************************NAVBARRE*****************************/
-  include('../elements/navBarre.php')
-  ?>
+  <header>
+    <?php
+    /****************************MODALS*****************************/
+    include('../elements/modals.php');
+    /****************************NAVBARRE*****************************/
+    include('../elements/navBarre.php')
+    ?>
 
-  <!----------------------SLIDE-------------------->
-  <section class="slide">
-    <div class="titres">
-      <div class="qsn">Qui sommes nous ?</div>
-    </div>
-  </section>
+    <!----------------------SLIDE-------------------->
+    <section class="slide">
+      <div class="titres">
+        <div class="qsn">Qui sommes nous ?</div>
+      </div>
+    </section>
   </header>
 
   <!------------------------CORPS---------------------->
