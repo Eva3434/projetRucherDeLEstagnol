@@ -6,15 +6,12 @@
 
   session_start();
   // Connexion à la base de données
-  $bdd = new PDO('mysql:host=localhost;dbname=' . $DB_NAME, $DB_USER, $DB_PASS, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)); 
-
-
-
-    // try {
-    //     $db = new PDO('mysql:host=localhost;dbname=rucherdelestagnol', "root", "", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-    // } catch(PDOException $e) {
-    //     $db = NULL;
-    //     echo ("Erreur: " . $e->getMessage());
-    // }
+  // $bdd = new PDO('mysql:host=localhost;dbname=' . $DB_NAME, $DB_USER, $DB_PASS, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)); 
+    try {
+      $bdd = new PDO('mysql:host=localhost;dbname=rucherdelestagnol', "root", "", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    } catch(PDOException $e) {
+      $bdd = NULL;
+        echo ("Erreur: " . $e->getMessage());
+    }    
 ?>
 

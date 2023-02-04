@@ -83,8 +83,8 @@
         looks reasonable.
       </p>
     </section>
-    <img src="../images/beekeeper-gc599b6945_1920.jpg" class="imgNotreActivite" />
-    <img src="../images/honey-gdeb79c4ff_1920.jpg" class="imgNotreActivite" />
+    <img src="../images/beekeeper-gc599b6945_1920.jpg" class="imgNotreActivite imgNotreActiviteResponsive" />
+    <img src="../images/honey-gdeb79c4ff_1920.jpg" class="imgNotreActivite imgNotreActiviteResponsive" />
     <section>
       <div class="titreGridPageAcc">L'apithérapie</div>
       <p class="texteGridPageAcc">

@@ -22,9 +22,9 @@ include('../pages/index.php');
             $insert->bindParam("mot_de_passe_utilisateur", $mdp_utilisateur);
             if($insert->execute()) {
                 // Si aucune erreur ne se produit, on propose de se connecter
-                echo('<p style=”color: green;”>Inscription réussie.</p>Se connecter.</a>');
+                die('<p style=”color: green;”>Inscription réussie.</p><a href="../index.html">Se connecter.</a>');
             }
-            echo('<p style=”color: red;”>Inscription échouée.</p><a href="index.html">Réessayer.</a>');
+            die('<p style=”color: red;”>Inscription échouée.</p><a href="index.html">Réessayer.</a>');
         }
     }
 

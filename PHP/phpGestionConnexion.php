@@ -1,7 +1,6 @@
 <?php
 include('../PHP/connect.php');
 
-
 if(!empty($_POST["formModal"])) {    
     // On recherche si l'adresse email existe déjà en BDD
     $select = $bdd->prepare("SELECT * FROM utilisateurs WHERE mail_utilisateur=:mail_utilisateur;");
