@@ -53,6 +53,9 @@ nav{
     padding: 0.8%;
     text-transform: uppercase;
 }
+.iconePanier{
+    width: 60%;
+}
 
 /********************HEADER************************/
 .imageFond {
@@ -473,8 +476,36 @@ textarea{
   body{
     overflow-x: hidden;
   } */
-
-
+/***********************************************PAGE PANIER**************************************************/
+.colonnesPanier{
+    background-color: var(--jaunepale);
+    margin: 3% 10%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nomColonnes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1%;
+}
+.contenuPanier{
+    background-color: var(--jauneClair);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 5px;
+    align-items: center;
+}
+.contenuPanier > img {
+    width: 2%;
+    height: 2%;
+    object-fit: fill;    
+}
 /*************************RESPONSIVE******************/
 /***********************MODAL INSCRIPTION******************/
 @media (max-width: 992px) {

@@ -12,7 +12,7 @@ include_once('../PHP/connect.php');
   <a href="pageGalerie.php">Galerie</a>
   <a class="logo"><img src="../images/logo.png" class="logoNav" /></a>
   <a href="pageNotreHistoire.php">Notre Histoire</a>
-  <a href="pageContact.php">Contact</a>
+  <a href="pageContact.php">Contact</a> 
 
   <?php
   if (isset($_SESSION['utilisateur'])) {
@@ -20,4 +20,5 @@ include_once('../PHP/connect.php');
   } else {
     echo '<button class="boutonConnexion">Connexion</button>';
   } ?>
+  <a href="pagePanier.php"><img src="../images/icone_panier.png" class="iconePanier"></a>
 </nav>
