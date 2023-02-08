@@ -33,7 +33,8 @@
   <!------------------------CORPS---------------------->
   <section>
     <div>Ajout Article</div>
-      <form enctype="multipart/form-data" action="../pages/pageAjoutProduits.php" class="formAjoutProduits" method="POST">
+      <form enctype="multipart/form-data" action="../PHP/phpGestionAjoutProduits.php" class="formAjoutProduits" method="POST">
+        <input type="hidden" name="formAjoutProduits" value="1" />
         <label>Nom article :</label>
         <input type="texte" name="ajoutArticleNom"/>
         <label>Description :</label>

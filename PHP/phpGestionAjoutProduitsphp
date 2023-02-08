@@ -1,5 +1,4 @@
 <?php
-
 // On inclut notre connecteur à la base de données
 include('../PHP/connect.php');
 include('../pages/pageAjoutProduits.php');
@@ -9,7 +8,7 @@ include('../pages/pageAjoutProduits.php');
         // On recherche si le nom de l'aticle existe déjà en BDD
         $select = $bdd->prepare("SELECT nom_produit FROM produits WHERE nom_produit=:nom_produit;");
         $select->bindParam(":nom_produit", $_POST["ajoutArticleNom"]);
-        $select->execute();
+        $select->execute(); var_dump($_POST);die;
         if(empty($select->fetch(PDO::FETCH_COLUMN))) {
             // Si ce n'est pas le cas, on vient l'insérer
             $insert = $bdd->prepare("INSERT INTO produits(nom_produit, description_produit, prix_produit, image_produit)
