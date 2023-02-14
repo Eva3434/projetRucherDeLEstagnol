@@ -8,19 +8,20 @@ include('../pages/pageAjoutProduits.php');
         // On recherche si le nom de l'aticle existe déjà en BDD
         $select = $bdd->prepare("SELECT nom_produit FROM produits WHERE nom_produit=:nom_produit;");
         $select->bindParam(":nom_produit", $_POST["ajoutArticleNom"]);
-        $select->execute(); var_dump($_POST);die;
+        $select->execute(); 
         if(empty($select->fetch(PDO::FETCH_COLUMN))) {
             // Si ce n'est pas le cas, on vient l'insérer
-            $insert = $bdd->prepare("INSERT INTO produits(nom_produit, description_produit, prix_produit, image_produit)
-                                    VALUES(:nom_produit, :description_produit, :prix_produit);");
+            $insert = $bdd->prepare("INSERT INTO produits(nom_produit, description_produit, prix_produit, id_categorie)
+                                    VALUES(:nom_produit, :description_produit, :prix_produit, :id_categorie);");
             $insert->bindParam(":nom_produit", $_POST['ajoutArticleNom']);
             $insert->bindParam(":description_produit", $_POST['ajoutArticleDescription']);
             $insert->bindParam(":prix_produit", $_POST['ajoutArticlePrix']);
+            $insert->bindParam(":id_categorie", $_POST['ajoutArticleCategorie']);
             if($insert->execute()) {
                 // Si aucune erreur ne se produit, on propose de se connecter
-                die('<p style=”color: green;”>Inscription réussie.</p><a href="../pages/pageAjoutProduits.php">Se connecter.</a>');
+                die('<p style=”color: green;”>Ajout produit réussi.</p>');
             }
-            die('<p style=”color: red;”>Inscription échouée.</p><a href="../pages/pageAjoutProduits.php">Réessayer.</a>');
+            die('<p style=”color: red;”>Ajout produit annulé.</p>');
         }
     }
 

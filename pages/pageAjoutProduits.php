@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../style.css" />
-  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Sofia+Sans:wght@200&family=Space+Mono&family=Tourney:wght@300&display=swap" rel="stylesheet" />
@@ -41,6 +41,17 @@
         <input type="texte" name="ajoutArticleDescription"/>
         <label>Prix :</label>
         <input type="float" name="ajoutArticlePrix"/>
+        <label>Catégorie : </label>     
+          <select name="ajoutArticleCategorie">  
+            <?php 
+            $categories = $bdd->query('SELECT * FROM categories')->fetchAll();
+            foreach($categories as $categorie)
+            {
+              echo '<option value="'. $categorie['id_categorie'].'">'.$categorie['nom_categorie'].' </option>';
+            }
+            ?>
+          </select>
+
         <!-- <input type="file" name="ajoutArticleImage"> -->
         <input type="submit" value="Ajouter l'article">
       </form>
