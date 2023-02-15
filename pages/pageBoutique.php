@@ -40,12 +40,19 @@
   <div class="nosProduitsTitre">Notre selection</div>
   <section class="boutiqueProduits">
     <article>
-      <img src="../images/Garrigues Bio 400g.jpeg" class="imgBoutique" />
-      <p class="boutiqueNomProduit">Miel de Garrigues</p>
-      <p class="boutiquePrix">7,50€</p>
-      <p class="ajouter">Ajouter au panier</p>
-    </article>
+    <?php
+        $produits = $bdd->query('SELECT * FROM produits')->fetchAll();
+        // var_dump($produits);die;
+        foreach ($produits as $produit) {
+          
+          echo '<img src="../images/imagesProduits/' .$produit['image_produit'] .'" class="imgBoutique"> 
+          <p class="boutiqueNomProduit">' . $produit['nom_produit'] . '</p>
+          <p class="boutiquePrix">' . $produit['prix_produit'] . '</p>
+          <p class="ajouter">Ajouter au panier</p>';          
+        }
+        ?>      
     <article>
+<!--       
       <img src="../images/Chataignier Bio 400g.jpeg" class="imgBoutique" />
       <p class="boutiqueNomProduit">Miel de Fleurs</p>
       <p class="boutiquePrix">7,50€</p>
@@ -75,7 +82,7 @@
       <p class="boutiquePrix">7,50€</p>
       <p class="ajouter">Ajouter au panier</p>
     </article>
-  </section>
+  </section> -->
   <!------------------------FOOTER---------------------->
   <?php
   include('../elements/footer.php');

@@ -32,29 +32,30 @@
 
   <!------------------------CORPS---------------------->
   <section>
-    <div>Ajout Article</div>
-      <form enctype="multipart/form-data" action="../PHP/phpGestionAjoutProduits.php" class="formAjoutProduits" method="POST">
-        <input type="hidden" name="formAjoutProduits" value="1" />
-        <label>Nom article :</label>
-        <input type="texte" name="ajoutArticleNom"/>
-        <label>Description :</label>
-        <input type="texte" name="ajoutArticleDescription"/>
-        <label>Prix :</label>
-        <input type="float" name="ajoutArticlePrix"/>
-        <label>Catégorie : </label>     
-          <select name="ajoutArticleCategorie">  
-            <?php 
-            $categories = $bdd->query('SELECT * FROM categories')->fetchAll();
-            foreach($categories as $categorie)
-            {
-              echo '<option value="'. $categorie['id_categorie'].'">'.$categorie['nom_categorie'].' </option>';
-            }
-            ?>
-          </select>
+    <div class='ajoutArticle'>Création d'un nouveau produit</div>
+    <div class=''><?= $message ?></div>
 
-        <!-- <input type="file" name="ajoutArticleImage"> -->
-        <input type="submit" value="Ajouter l'article">
-      </form>
+    <form enctype="multipart/form-data" action="../PHP/phpGestionAjoutProduits.php" class="formAjoutProduits" method="POST">
+      <input type="hidden" name="formAjoutProduits" value="1" />
+      <label>Nom article :</label>
+      <input type="texte" name="ajoutArticleNom" />
+      <label>Description :</label>
+      <input type="texte" name="ajoutArticleDescription" />
+      <label>Prix :</label>
+      <input type="float" name="ajoutArticlePrix" />
+      <label>Sélectionner catégorie : </label>
+      <select name="ajoutArticleCategorie">
+        <?php
+        $categories = $bdd->query('SELECT * FROM categories')->fetchAll();
+        foreach ($categories as $categorie) {
+          echo '<option value="' . $categorie['id_categorie'] . '">' . $categorie['nom_categorie'] . ' </option>';
+        }
+        ?>
+      </select>
+      <label>Sélectionner une ou plusieurs image(s) : </label>
+      <input type="file" name="ajoutArticleImage">
+      <input type="submit" value="Ajouter l'article" class="boutonAjoutProduit">
+    </form>
   </section>
 
   <!----------------------FOOTER-------------------->

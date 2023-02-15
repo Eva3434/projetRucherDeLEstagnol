@@ -506,7 +506,58 @@ textarea{
     height: 2%;
     object-fit: fill;    
 }
-/*************************RESPONSIVE******************/
+/***********************************************PAGE AJOUT PRODUIT*************************************************/
+.ajoutArticle{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 2%;
+}
+.formAjoutProduits{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 20% 5% 20%; 
+    border-radius: 10px;
+    background-color: var(--jauneClair);
+}
+.messageAjout{
+    color: black;
+    background-color: var(--jaune);
+    margin: 1% 30%;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.formAjoutProduits > input{
+    margin: 0% 5%;
+    border: none;
+    border-radius: 10px;   
+    font-size: 20px; 
+    background-color: var(--jaunepale);
+}
+.formAjoutProduits >  label{
+    margin: 1% 5%;
+    font-size: 20px;
+}
+.formAjoutProduits > select{
+    margin: 0% 5% 1% 5%;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: var(--jaunepale);
+}
+.formAjoutProduits .boutonAjoutProduit{
+    margin: 3% 0%;
+    padding: 0.5%;  
+    width: 30%;  
+    height: 20%;
+    background-color: var(--jaune);
+    font-weight: bold;        
+    align-self: center;
+}
+/****************************************************************RESPONSIVE**********************************************************/
 /***********************MODAL INSCRIPTION******************/
 @media (max-width: 992px) {
     .modal-templateInsc {
