@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -22,7 +21,7 @@
     /****************************NAVBARRE*****************************/
     include('../elements/navBarre.php')
     ?>
-  <!----------------------SLIDE-------------------->
+    <!----------------------SLIDE-------------------->
     <section class="slide">
       <div class="titres">
         <div class="Boutique">Boutique</div>
@@ -32,57 +31,17 @@
 
   <!------------------------CORPS---------------------->
   <section class="boutiqueCategories">
-    <a>Tout voir</a>
-    <a href="pageMiels.html">Miels</a>
-    <a href="pageProduits.html">Produits de la ruche</a>
-    <a href="pageCoffrets.html">Coffrets</a>
+    <a href="pageBoutique.php">Tout voir</a>
+    <a href="pageBoutique.php?filtre=miels">Miels</a>
+    <a href="pageBoutique.php?filtre=ruche">Produits de la ruche</a>
+    <a href="pageBoutique.php?filtre=coffrets">Coffrets</a>
   </section>
-  <div class="nosProduitsTitre">Notre selection</div>
+  <div class="nosProduitsTitre">Nos produits</div>
   <section class="boutiqueProduits">
-    <article>
     <?php
-        $produits = $bdd->query('SELECT * FROM produits')->fetchAll();
-        // var_dump($produits);die;
-        foreach ($produits as $produit) {
-          
-          echo '<img src="../images/imagesProduits/' .$produit['image_produit'] .'" class="imgBoutique"> 
-          <p class="boutiqueNomProduit">' . $produit['nom_produit'] . '</p>
-          <p class="boutiquePrix">' . $produit['prix_produit'] . '</p>
-          <p class="ajouter">Ajouter au panier</p>';          
-        }
-        ?>      
-    <article>
-<!--       
-      <img src="../images/Chataignier Bio 400g.jpeg" class="imgBoutique" />
-      <p class="boutiqueNomProduit">Miel de Fleurs</p>
-      <p class="boutiquePrix">7,50€</p>
-      <p class="ajouter">Ajouter au panier</p>
-    </article>
-    <article>
-      <img src="../images/Fleurs Bio 400g.jpeg" class="imgBoutique" />
-      <p class="boutiqueNomProduit">Miel de Chataignier</p>
-      <p class="boutiquePrix">7,50€</p>
-      <p class="ajouter">Ajouter au panier</p>
-    </article>
-    <article>
-      <img src="../images/Tournesol Bio 400g.jpeg" class="imgBoutique" />
-      <p class="boutiqueNomProduit">Miel de Tournesol</p>
-      <p class="boutiquePrix">7,50€</p>
-      <p class="ajouter">Ajouter au panier</p>
-    </article>
-    <article>
-      <img src="../images/Garrigues Bio 400g.jpeg" class="imgBoutique" />
-      <p class="boutiqueNomProduit">Miel de Garrigues</p>
-      <p class="boutiquePrix">7,50€</p>
-      <p class="ajouter">Ajouter au panier</p>
-    </article>
-    <article>
-      <img src="../images/Fleurs Bio 400g.jpeg" class="imgBoutique" />
-      <p class="boutiqueNomProduit">Miel de Fleurs</p>
-      <p class="boutiquePrix">7,50€</p>
-      <p class="ajouter">Ajouter au panier</p>
-    </article>
-  </section> -->
+    include('../PHP/phpGestionBoutique.php');
+    ?>
+  </section>
   <!------------------------FOOTER---------------------->
   <?php
   include('../elements/footer.php');

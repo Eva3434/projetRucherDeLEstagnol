@@ -8,7 +8,7 @@ include_once('../PHP/connect.php');
 
 <nav>
   <a href="index.php">Accueil</a>
-  <a href="pageBoutique.php">Boutique</a>
+  <a href="../pages/pageBoutique.php">Boutique</a>
   <a href="pageGalerie.php">Galerie</a>
   <a class="logo"><img src="../images/logo.png" class="logoNav" /></a>
   <a href="pageNotreHistoire.php">Notre Histoire</a>

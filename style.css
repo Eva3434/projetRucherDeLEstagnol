@@ -204,20 +204,30 @@ footer{
 /********************PRODUITS*********************/
 .boutiqueProduits{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
 }
 .boutiqueProduits > article {
     padding: 5%;
-    margin: 5% 5%;
+    margin: 5%;
     border-radius: 5px;
     background-color: var(--jaunepale);
     text-align: center;
     font-weight: bold;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center; 
+    font-size: 20px;
+    font-weight: bold;   
+}
+.boutiqueNomProduit{
+    margin: 3%;
+    text-transform: capitalize;
 }
 .imgBoutique{
-    width: 60%;
-    height: 70%;
-    object-fit: contain;
+    width: 50%;  
+    height: 50%;
+    object-fit: cover; 
+    align-self: center;    
 }
 .ajouter{
     background-color: var(--jauneClair);
@@ -228,6 +238,41 @@ footer{
     font-weight: bold;
     border-radius: 5px;
 }
+/***********************************************PAGE BOUTIQUE**************************************************/
+.produitContenu{
+    margin : 5% 10%;
+    display: flex;    
+}
+.imgProduit{
+    width: 30%;
+    object-fit: cover; 
+    margin-right: 3%;
+}
+.produitNom{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10%;   
+}
+.produitDescription{
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+.produitPrix{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+.ajouterProduit{
+    background-color: var(--jauneClair);
+    box-shadow: 1px 5px 5px gray;
+    margin-bottom: 10%;
+    padding: 3%;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
 /***********************************************PAGE GALERIE**************************************************/
 
 
@@ -547,6 +592,7 @@ textarea{
     border-radius: 10px;
     font-size: 20px;
     background-color: var(--jaunepale);
+    text-transform: capitalize;
 }
 .formAjoutProduits .boutonAjoutProduit{
     margin: 3% 0%;
@@ -623,7 +669,7 @@ textarea{
 
 }
 /***********************PAGE BOUTIQUE*****************/
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
     .Boutique{
         font-size: 25px;
     }
@@ -649,7 +695,7 @@ textarea{
         height: 80%;
     }
 
-}
+} */
 /***********************PAGE GALERIE******************/
 @media (max-width: 992px) {
     .photosGalerie{       

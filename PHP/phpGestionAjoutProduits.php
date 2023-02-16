@@ -1,7 +1,6 @@
 <?php
 // On inclut notre connecteur à la base de données
 include('../PHP/connect.php');
-$message = "";
     // On entre dans la boucle seulement lors de l’envoi du formulaire
     if(!empty($_POST["formAjoutProduits"])) {
         // On recherche si le nom de l'aticle existe déjà en BDD
@@ -10,13 +9,14 @@ $message = "";
         $select->execute(); 
         if(empty($select->fetch(PDO::FETCH_COLUMN))) {
             if (isset($_FILES['ajoutArticleImage'])) {
-                $extensions_ok = array('png', 'jpg');        
+                // $extensions_ok = array('png', 'jpg', 'jpeg');        
+                $arr = explode('/', $_FILES['ajoutArticleImage']['type']);
                 $tmpName = $_FILES['ajoutArticleImage']['tmp_name'];
                 $name = $_FILES['ajoutArticleImage']['name'];
                 $size = $_FILES['ajoutArticleImage']['size'];
                 $error = $_FILES['ajoutArticleImage']['error'];        
-    
-                if (!in_array(substr(strrchr($_FILES['ajoutArticleImage']['name'], '.'), 1), $extensions_ok)) {
+                // if (!in_array(substr(strrchr($_FILES['ajoutArticleImage']['name'], '.'), 1), $extensions_ok)) {
+                if('image' !== $arr[0]) {
                     $message = '<p class="messageAjout">Extension non autorisée</p>';
                 } else {
                     // Si ce n'est pas le cas, on vient l'insérer

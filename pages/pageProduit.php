@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Sofia+Sans:wght@200&family=Space+Mono&family=Tourney:wght@300&display=swap" rel="stylesheet" />
-  <title>Rucher de l'Estagnol - Produits de la Ruche</title>
+  <title>Rucher de l'Estagnol - Nos Miels</title>
 </head>
 
 <body>
@@ -25,13 +25,32 @@
     <!----------------------SLIDE-------------------->
     <section class="slide">
       <div class="titres">
-        <div class="contact">Les produits de la ruche</div>
+        <div class="nosMiels">Nos miels</div>
       </div>
     </section>
   </header>
-
   <!------------------------CORPS---------------------->
-  <section></section>
+  <section>
+<?php
+if(!empty($_GET['selectionner'])){
+  $idProduit = $_GET['selectionner'];
+  $afficherProduit = $bdd->query('SELECT * FROM produits WHERE id_produit = '.$idProduit)->fetch();
+    echo '<article class="produitContenu">
+    <img src="../images/imagesProduits/' .$afficherProduit['image_produit'] .'" class="imgProduit"> 
+    <div class="produitDroite">
+    <p class="produitNom">' . $afficherProduit['nom_produit'] . '</p>
+    <p class="produitDescription">' . $afficherProduit['description_produit'] . '</p>
+    <p class="produitPrix">' . $afficherProduit['prix_produit'] . '€</p>
+    <a class="ajouterProduit">Ajouter au panier</a>
+    </div>
+    </article>';          
+} 
+  
+?>
+
+  </section>
+
+
 
   <!----------------------FOOTER-------------------->
   <?php

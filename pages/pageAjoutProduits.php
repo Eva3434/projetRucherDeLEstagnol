@@ -33,7 +33,9 @@
   <!------------------------CORPS---------------------->
   <section>
     <div class='ajoutArticle'>Création d'un nouveau produit</div>
-    <div class=''><?= $message ?></div>
+    <?php if(!empty($message)) { ?>
+      <div class=''><?= $message ?></div>
+    <?php } ?>
 
     <form enctype="multipart/form-data" action="../PHP/phpGestionAjoutProduits.php" class="formAjoutProduits" method="POST">
       <input type="hidden" name="formAjoutProduits" value="1" />
@@ -48,12 +50,12 @@
         <?php
         $categories = $bdd->query('SELECT * FROM categories')->fetchAll();
         foreach ($categories as $categorie) {
-          echo '<option value="' . $categorie['id_categorie'] . '">' . $categorie['nom_categorie'] . ' </option>';
+          echo '<option class="ajoutCategorie" value="' . $categorie['id_categorie'] . '">' . $categorie['nom_categorie'] . ' </option>';
         }
         ?>
       </select>
       <label>Sélectionner une ou plusieurs image(s) : </label>
-      <input type="file" name="ajoutArticleImage">
+      <input type="file" name="ajoutArticleImage" accept="image/*">
       <input type="submit" value="Ajouter l'article" class="boutonAjoutProduit">
     </form>
   </section>
