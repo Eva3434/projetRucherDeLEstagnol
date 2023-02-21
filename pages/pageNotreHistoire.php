@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../style.css" />
-  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../images/logo.webp" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Sofia+Sans:wght@200&family=Space+Mono&family=Tourney:wght@300&display=swap" rel="stylesheet" />
@@ -33,7 +33,7 @@
   <!------------------------CORPS---------------------->
   <div class="quelquesMots">Quelques mots sur nous et notre activité</div>
   <section class="qsnTextHaut">
-    <img src="../images/imageFond.jpg" />
+    <img src="../images/photoMiellerie.webp" alt=""/>
     <div>
       <p class="titrePresentation">Présentation</p>
       <p class="textePresentation">

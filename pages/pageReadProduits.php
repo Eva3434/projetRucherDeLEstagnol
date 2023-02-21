@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Sofia+Sans:wght@200&family=Space+Mono&family=Tourney:wght@300&display=swap" rel="stylesheet" />
-  <title>Rucher de l'Estagnol - Galerie</title>
+  <title>Rucher de l'Estagnol - Ajout Produit</title>
 </head>
 
 <body>
@@ -21,31 +21,27 @@
     /****************************NAVBARRE*****************************/
     include('../elements/navBarre.php')
     ?>
+
     <!----------------------SLIDE-------------------->
     <section class="slide">
-      <div class="titres">
-        <div class="galerie">Galerie</div>
+      <div class="titres">Liste des articles</div>
       </div>
     </section>
   </header>
 
   <!------------------------CORPS---------------------->
-  <section class="decouvrez">
-    <div>Découvez notre activité en photo...</div>
-  </section>
-  <section class="photosGalerie">
-    <img src="../images/boutique.jpg" alt="">
-    <img src="../images/rucheLavande.jpg" alt="">
-    <img src="../images/lavande.jpg" alt="">
-    <img src="../images/apicultureAccueil.webp" alt="">
-    <img src="../images/apitherapieAccueil.webp" alt="">
-    <img src="../images/IMG_0871.jpeg" alt="">
-    <img src="../images/header.webp" alt="">
-    <img src="../images/imagesNosAutres.png" alt="">
-    <img src="../images/photoMiellerie.webp" alt="">
-    <img src="../images/IMG_0959.JPG" alt="">
-    <img src="../images/Ruchettes.jpeg" alt="">
-    <img src="../images/IMG_2538.jpeg" alt="">
+  <section>
+
+    <div class='ajoutArticle'>Afficher produits</div>   
+    
+        <?php     
+        $produits = $bdd->query('SELECT * FROM produits')->fetchAll();
+        foreach ($produits as $produit) {
+          echo '<option value="' . $produit['id_produit'] . '">' . $produit['id_produit'] . $produit['nom_produit'] . $produit['prix_produit'] .  $produit['stock_produit'] .  ' </option>';
+        }
+        
+        ?>
+      
   </section>
 
   <!----------------------FOOTER-------------------->

@@ -1,9 +1,9 @@
     <!----------------------FOOTER-------------------->
     <footer>
       <section class="sectionIcones">
-        <img src="../images/icons8-facebook.svg" class="icones" />
-        <img src="../images/icons8-instagram.svg" class="icones" />
-        <img src="../images/icons8-logo-google.svg" class="icones" />
+        <img src="../images/icons8-facebook.svg" class="icones" alt="Accés à Facebook"/>
+        <img src="../images/icons8-instagram.svg" class="icones" alt="Accés à Instagram" />
+        <img src="../images/icons8-logo-google.svg" class="icones" alt="Accés à Google"/>
       </section>
       <section class="footer">
         <div>RUCHER DE L'ESTAGNOL - Chemin du Tourtourel - 34570 SAUSSAN</div>

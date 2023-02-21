@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../style.css" />
-  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../images/logo.webp" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Sofia+Sans:wght@200&family=Space+Mono&family=Tourney:wght@300&display=swap" rel="stylesheet" />
@@ -34,17 +34,17 @@
     <div class="nosProduitsTitre">Nos produits</div>
     <section class="nosProduitsGrid">
       <article>
-        <img src="../images/imageNosMiels.png" class="imgAccueil" />
+        <img src="../images/imageNosMiels.png" class="imgAccueil" alt=""/>
         <p class="categorieAccueil">Nos Miels</p>
         <p class="decouvrir">Découvrir</p>
       </article>
       <article>
-        <img src="../images/imagesNosAutres.png" class="imgAccueil" />
+        <img src="../images/imagesNosAutres.png" class="imgAccueil" alt=""/>
         <p class="categorieAccueil">Nos Produits de la Ruche</p>
         <p class="decouvrir">Découvrir</p>
       </article>
       <article>
-        <img src="../images/imageNosCoffrets.png" class="imgAccueil" />
+        <img src="../images/imageNosCoffrets.png" class="imgAccueil" alt="" />
         <p class="categorieAccueil">Nos Coffrets</p>
         <p class="decouvrir">Découvrir</p>
       </article>
@@ -52,7 +52,7 @@
   </section>
   <div class="nosProduitsTitre">Notre Activité</div>
   <section class="notreActivite">
-    <img src="../images/imageFond.jpg" class="imgNotreActivite" />
+    <img src="../images/photoMiellerie.webp" class="imgNotreActivite" alt=""/>
     <section>
       <div class="titreGridPageAcc">La miellerie</div>
       <p class="texteGridPageAcc">
@@ -83,8 +83,8 @@
         looks reasonable.
       </p>
     </section>
-    <img src="../images/beekeeper-gc599b6945_1920.jpg" class="imgNotreActivite imgNotreActiviteResponsive" />
-    <img src="../images/honey-gdeb79c4ff_1920.jpg" class="imgNotreActivite imgNotreActiviteResponsive" />
+    <img src="../images/apicultureAccueil.webp" class="imgNotreActivite imgNotreActiviteResponsive" alt="" />
+    <img src="../images/apitherapieAccueil.webp" class="imgNotreActivite imgNotreActiviteResponsive" alt=""/>
     <section>
       <div class="titreGridPageAcc">L'apithérapie</div>
       <p class="texteGridPageAcc">
