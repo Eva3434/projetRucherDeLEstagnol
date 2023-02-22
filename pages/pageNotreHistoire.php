@@ -17,9 +17,9 @@
   <header>
     <?php
     /****************************MODALS*****************************/
-    include('../elements/modals.php');
+    require('../elements/modals.php');
     /****************************NAVBARRE*****************************/
-    include('../elements/navBarre.php')
+    require('../elements/navBarre.php')
     ?>
 
     <!----------------------SLIDE-------------------->
@@ -93,7 +93,7 @@
   </section>
   <!----------------------FOOTER-------------------->
   <?php
-  include('../elements/footer.php');
+  require('../elements/footer.php');
   ?>
 </body>
 

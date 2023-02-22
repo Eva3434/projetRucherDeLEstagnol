@@ -1,8 +1,8 @@
 <?php
 
 // On inclut notre connecteur à la base de données
-include('../PHP/connect.php');
-include('../pages/index.php');
+require('../PHP/connect.php');
+require('../pages/index.php');
 
     // On entre dans la boucle seulement lors de l’envoi du formulaire
     if(!empty($_POST["formInscription"])) {

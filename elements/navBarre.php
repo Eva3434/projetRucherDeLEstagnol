@@ -1,7 +1,5 @@
 <?php
-include_once('../PHP/connect.php');
-// var_dump($_SESSION);
-
+require_once('../PHP/connect.php');
 ?>
 
 <!------------------------NAV---------------------->
@@ -10,9 +8,9 @@ include_once('../PHP/connect.php');
   <a href="index.php">Accueil</a>
   <a href="../pages/pageBoutique.php">Boutique</a>
   <a href="pageGalerie.php">Galerie</a>
-  <a href="index.php" class="logo"><img src="../images/logo.webp" class="logoNav" alt=""/></a>
+  <a href="index.php" class="logo"><img src="../images/logo.webp" class="logoNav" alt="" /></a>
   <a href="pageNotreHistoire.php">Notre Histoire</a>
-  <a href="pageContact.php">Contact</a> 
+  <a href="pageContact.php">Contact</a>
 
   <?php
   if (isset($_SESSION['utilisateur'])) {

@@ -1,5 +1,5 @@
 <?php
-include('../PHP/connect.php');
+require('../PHP/connect.php');
 
 if(!empty($_POST["formModal"])) {    
     // On recherche si l'adresse email existe déjà en BDD

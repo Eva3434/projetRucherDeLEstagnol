@@ -1,6 +1,6 @@
 <?php
 // On inclut notre connecteur à la base de données
-include('../PHP/connect.php');
+require('../PHP/connect.php');
     // On entre dans la boucle seulement lors de l’envoi du formulaire
     if(!empty($_POST["formAjoutProduits"])) {
         // On recherche si le nom de l'aticle existe déjà en BDD
@@ -17,7 +17,7 @@ include('../PHP/connect.php');
                 $error = $_FILES['ajoutArticleImage']['error'];        
                 // if (!in_array(substr(strrchr($_FILES['ajoutArticleImage']['name'], '.'), 1), $extensions_ok)) {
                 if('image' !== $arr[0]) {
-                    $message = '<p class="messageAjout">Extension non autorisée</p>';
+                    $_SESSION['message'] = '<p class="messageAjout">Extension non autorisée</p>';
                 } else {
                     // Si ce n'est pas le cas, on vient l'insérer
                     $insert = $bdd->prepare("INSERT INTO produits(nom_produit, description_produit, prix_produit, stock_produit, image_produit, id_categorie)
@@ -29,14 +29,16 @@ include('../PHP/connect.php');
                     $insert->bindParam(":id_categorie", $_POST['ajoutArticleCategorie']);
                     if($insert->execute()) {
                         $fichier = move_uploaded_file($_FILES['ajoutArticleImage']['tmp_name'], "../images/imagesProduits/" . $_FILES['ajoutArticleImage']['name']);
-                        // Si aucune erreur ne se produit, on propose de se connecter
-                        $message = '<p class="messageAjout">Ajout produit réussi.</p>';
+                        // Message pour informer l'utilisateur que l'article est ajouté
+                        $_SESSION['message'] = '<p class="messageAjout">Ajout produit réussi.</p>';
                     } else {
-                        $message = '<p class="messageAjout">Ajout produit annulé.</p>';
+                        $_SESSION['message'] = '<p class="messageAjout">Ajout produit annulé.</p>';
                     }
                 }
-            }
+            }            
+        } else {
+            $_SESSION['message'] = '<p class="messageAjout">Produit déjà existant.</p>';
         }
     }
-    include('../pages/pageAjoutProduits.php');
+    header('Location: ../pages/pageAjoutProduits.php'); 
 ?>

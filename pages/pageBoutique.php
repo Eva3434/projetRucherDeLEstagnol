@@ -17,9 +17,9 @@
   <header>
     <?php
     /****************************MODALS*****************************/
-    include('../elements/modals.php');
+    require('../elements/modals.php');
     /****************************NAVBARRE*****************************/
-    include('../elements/navBarre.php')
+    require('../elements/navBarre.php')
     ?>
     <!----------------------SLIDE-------------------->
     <section class="slide">
@@ -39,12 +39,12 @@
   <div class="nosProduitsTitre">Nos produits</div>
   <section class="boutiqueProduits">
     <?php
-    include('../PHP/phpGestionBoutique.php');
+    require('../PHP/phpGestionBoutique.php');
     ?>
   </section>
   <!------------------------FOOTER---------------------->
   <?php
-  include('../elements/footer.php');
+  require('../elements/footer.php');
   ?>
 
 </body>

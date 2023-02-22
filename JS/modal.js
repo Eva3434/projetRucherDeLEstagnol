@@ -37,3 +37,4 @@ croixSelectorInsc.addEventListener("click", function () {
   back.classList.remove("modalBack");
   modalSelector.classList.remove("modal-template");
 });
+
