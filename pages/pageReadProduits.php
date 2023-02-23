@@ -67,8 +67,7 @@
               </td>
             </tr>
         </tbody>
-      </table>
-  <?php }
+        <?php }
         }
         if (!empty($_POST['form_delete'])) {
           $sql = 'DELETE FROM produits WHERE id_produit=:id_produit;';
@@ -79,7 +78,11 @@
           $color = "red;";
           $message = "Suppression effectuée";
         } ?>
-  <a href="pageAjoutProduits.php" class="ajouterProduitBouton">Ajouter un nouveau produit</a>
+      </table>
+  
+  <div class="boutonAjoutProduitRead">
+    <a href="pageAjoutProduits.php" class="ajouterProduitBouton">Ajouter un nouveau produit</a>
+  </div>
   </section>
 
 

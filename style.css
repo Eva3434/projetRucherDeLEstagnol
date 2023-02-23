@@ -554,13 +554,16 @@ textarea{
     object-fit: fill;    
 }
 /***********************************************PAGE READ PRODUITS*************************************************/
-.trTitreColonne{
-    display: flex;
-    justify-content: center;
-    align-self: center;
+.readTableau{
+    margin: auto;
+    background-color: var(--jaunepale);
+    padding: 1%;
+    border-radius: 10px;
 }
 
-
+.boutonAjoutProduitRead{
+    text-align: center;
+}
 .ajouterProduitBouton{
     padding: 0.5%;  
     background-color: var(--jaune);
