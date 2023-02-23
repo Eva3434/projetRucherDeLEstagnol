@@ -7,8 +7,8 @@ require_once('../PHP/connect.php');
 <nav>
   <a href="index.php">Accueil</a>
   <a href="../pages/pageBoutique.php">Boutique</a>
-  <a href="pageGalerie.php">Galerie</a>
-  <a href="index.php" class="logo"><img src="../images/logo.webp" class="logoNav" alt="" /></a>
+  <a href="pageGalerie.php">Galerie</a>    
+  <img src="../images/logo.webp" class="logoNav" alt="" />
   <a href="pageNotreHistoire.php">Notre Histoire</a>
   <a href="pageContact.php">Contact</a>
 

@@ -25,6 +25,7 @@ require('../elements/doctype.php')
 <section>
   <div class='ajoutArticle'>Création d'un nouveau produit</div>
   <?php
+  // On affiche les différents messages de validation ou d'erreur
   if (!empty($_SESSION['message'])) { ?>
     <div><?= $_SESSION['message'] ?></div>
   <?php
@@ -42,13 +43,14 @@ require('../elements/doctype.php')
     <label>Sélectionner catégorie : </label>
     <select name="ajoutArticleCategorie">
       <?php
+      // On recupère les catégories de la BDD 
       $categories = $bdd->query('SELECT * FROM categories')->fetchAll();
       foreach ($categories as $categorie) {
         echo '<option class="ajoutCategorie" value="' . $categorie['id_categorie'] . '">' . $categorie['nom_categorie'] . ' </option>';
       }
       ?>
     </select>
-    <label>Sélectionner une ou plusieurs image(s) : </label>
+    <label>Sélectionner une ou plusieurs image(s) : </label>    
     <input type="file" name="ajoutArticleImage" accept="image/*">
     <input type="submit" value="Ajouter l'article" class="boutonAjoutProduit">
   </form>

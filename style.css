@@ -22,11 +22,8 @@ nav a {
 }
 .logoNav {    
     height: 150px; 
-    padding-top: 1%;    
-}
-.logo{
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);       
     z-index: 3;
@@ -87,9 +84,9 @@ h2{
 .titres {
     align-self: center;
     background-color:white;
-    opacity: 0.8;
-    padding: 1.8%;
+    opacity: 0.8;   
     z-index: 2; 
+    border-radius: 10px;
 }
 
 /***********************FOOTER************************/
