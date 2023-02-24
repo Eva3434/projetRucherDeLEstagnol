@@ -25,7 +25,7 @@
     <section class="slide">
       <div class="titres">
         <h1>Rucher de l'Estagnol</h1>
-        <h2>Apiculteur récoltant</h2>
+        <h2>Apiculteurs récoltants</h2>
       </div>
     </section>
   </header>
@@ -56,16 +56,11 @@
     <section>
       <div class="titreGridPageAcc">La miellerie</div>
       <p class="texteGridPageAcc">
-        There are many variations of passages of Lorem Ipsum available, but
-        the majority have suffered alteration in some form, by injected
-        humour, or randomised words which don't look even slightly believable.
-        If you are going to use a passage of Lorem Ipsum, you need to be sure
-        there isn't anything embarrassing hidden in the middle of text. All
-        the Lorem Ipsum generators on the Internet tend to repeat predefined
-        chunks as necessary, making this the first true generator on the
-        Internet. It uses a dictionary of over 200 Latin words, combined with
-        a handful of model sentence structures, to generate Lorem Ipsum which
-        looks reasonable.
+        Le Rucher de l’Estagnol est une exploitation agricole familiale, située sur la commune de Saussan,
+        aux portes de Montpellier dans l’Hérault. Nous sommes des apiculteurs récoltants, nous transhumons
+        nos ruches dans toutes l’Occitanie ce qui nous permet d’obtenir une large gamme de miels Bio. 
+        Nous produisons tous nos miels et nos produits de la ruche, dans le respect de la nature et de nos
+        abeilles c’est pour cela que nous avons fait le choix de travailler en agriculture Biologique.      
       </p>
     </section>
     <section class="effetJS">

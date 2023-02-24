@@ -677,6 +677,19 @@ textarea{
         width: 80%;
     }
 }
+/***********************NAVBARRE******************/
+@media (max-width: 992px) {
+    .logoNav{
+        height: 120px;
+        top: 71%;
+    }
+}
+@media (max-width: 720px) {
+    .logoNav{
+        height: 100px;
+        top: 60%;
+    }
+}
 /***********************PAGE ACCUEIL******************/
 @media (max-width: 992px) {
     .texteGridPageAcc{
@@ -735,7 +748,7 @@ textarea{
 
 }
 /***********************PAGE BOUTIQUE*****************/
-/* @media (max-width: 720px) {
+ @media (max-width: 720px) {
     .Boutique{
         font-size: 25px;
     }
@@ -760,8 +773,7 @@ textarea{
         width: 70%;
         height: 80%;
     }
-
-} */
+}
 /***********************PAGE GALERIE******************/
 @media (max-width: 992px) {
     .photosGalerie{       
