@@ -40,7 +40,7 @@ if(!empty($_GET['selectionner'])){
     <div class="produitDroite">
     <p class="produitNom">' . $afficherProduit['nom_produit'] . '</p>
     <p class="produitDescription">' . $afficherProduit['description_produit'] . '</p>
-    <p class="produitPrix">' . $afficherProduit['prix_produit'] . '€</p>
+    <p class="produitPrix">' . number_format($afficherProduit['prix_produit'], 2, ',', ' ') . ' €</p>
     <a class="ajouterProduit">Ajouter au panier</a>
     </div>
     </article>';          
