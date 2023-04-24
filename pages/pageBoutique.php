@@ -24,7 +24,7 @@
     <!----------------------SLIDE-------------------->
     <section class="slide">
       <div class="titres">
-        <div class="Boutique">Boutique</div>
+        <h1 class="Boutique">Boutique</h1>
       </div>
     </section>
   </header>
@@ -36,7 +36,7 @@
     <a href="pageBoutique.php?filtre=ruche">Produits de la ruche</a>
     <a href="pageBoutique.php?filtre=coffrets">Coffrets</a>
   </section>
-  <div class="nosProduitsTitre">Nos produits</div>
+  <h2 class="nosProduitsTitre">Nos produits</h2>
   <section class="boutiqueProduits">
     <?php
     require('../PHP/phpGestionBoutique.php');

@@ -31,30 +31,30 @@
   </header>
   <!------------------------CORPS---------------------->
   <section>
-    <div class="nosProduitsTitre">Nos produits</div>
+    <h3 class="nosProduitsTitre">Nos produits</h3>
     <section class="nosProduitsGrid">
       <article>
         <img src="../images/imageNosMiels.png" class="imgAccueil" alt=""/>
-        <p class="categorieAccueil">Nos Miels</p>
+        <h4 class="categorieAccueil">Nos Miels</h4>
         <p class="decouvrir">Découvrir</p>
       </article>
       <article>
         <img src="../images/imagesNosAutres.png" class="imgAccueil" alt=""/>
-        <p class="categorieAccueil">Nos Produits de la Ruche</p>
+        <h4 class="categorieAccueil">Nos Produits de la Ruche</h4>
         <p class="decouvrir">Découvrir</p>
       </article>
       <article>
         <img src="../images/imageNosCoffrets.png" class="imgAccueil" alt="" />
-        <p class="categorieAccueil">Nos Coffrets</p>
+        <h4 class="categorieAccueil">Nos Coffrets</h4>
         <p class="decouvrir">Découvrir</p>
       </article>
     </section>
   </section>
-  <div class="nosProduitsTitre">Notre Activité</div>
+  <h3 class="nosProduitsTitre">Notre Activité</h3>
   <section class="notreActivite">
     <img src="../images/photoMiellerie.webp" class="imgNotreActivite" alt=""/>
     <section>
-      <div class="titreGridPageAcc">La miellerie</div>
+      <h4 class="titreGridPageAcc">La miellerie</h4>
       <p class="texteGridPageAcc">
         Le Rucher de l’Estagnol est une exploitation agricole familiale, située sur la commune de Saussan,
         aux portes de Montpellier dans l’Hérault. Nous sommes des apiculteurs récoltants, nous transhumons
@@ -64,7 +64,7 @@
       </p>
     </section>
     <section class="effetJS">
-      <div class="titreGridPageAcc">L'apiculture</div>
+      <h4 class="titreGridPageAcc">L'apiculture</h4>
       <p class="texteGridPageAcc">
         There are many variations of passages of Lorem Ipsum available, but
         the majority have suffered alteration in some form, by injected
@@ -81,7 +81,7 @@
     <img src="../images/apicultureAccueil.webp" class="imgNotreActivite imgNotreActiviteResponsive" alt="" />
     <img src="../images/apitherapieAccueil.webp" class="imgNotreActivite imgNotreActiviteResponsive" alt=""/>
     <section>
-      <div class="titreGridPageAcc">L'apithérapie</div>
+      <h4 class="titreGridPageAcc">L'apithérapie</h4>
       <p class="texteGridPageAcc">
         There are many variations of passages of Lorem Ipsum available, but
         the majority have suffered alteration in some form, by injected

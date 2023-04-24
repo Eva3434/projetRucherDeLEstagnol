@@ -10,11 +10,34 @@
 body{
     position: relative;
 }
+/********************CHARTE**************************/
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px ;
+}
+h2{
+    font-size: 30px;
+}
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;    
+}
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
 /********************NAVBAR**************************/
 nav a {    
     justify-content: center;    
     gap: 20px;    
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--white);
@@ -72,15 +95,6 @@ nav{
     justify-content: center;
    
 }
-h1{
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px ;
-}
-h2{
-    font-size: 30px ;
-}
 .titres {
     align-self: center;
     background-color:white;
@@ -95,14 +109,15 @@ footer{
 }
 .footer{
     color: var(--jaune);
-    text-align: center;
     font-size: 15px;    
     margin-bottom: 2%;
+    line-height: 25px;
+    text-align: center;  
 }
 .mentionsLegales{
-    color:black;
+    color: var(--white);
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     padding-bottom: 2%;
 }
 .icones{
@@ -112,16 +127,14 @@ footer{
     margin: 0% 2%; 
 }
 .sectionIcones{
+    padding-top: 70px;
+    padding-bottom: 30px;
     text-align: center;
-    padding: 1%;
 }
 /***********************************************PAGE ACCUEIL**************************************************/
 /********************NOS PRODUITS***********************/
 .nosProduitsTitre{
     text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
     padding: 3%;
 }
 .nosProduitsGrid{
@@ -142,10 +155,12 @@ footer{
 .decouvrir{
     background-color: var(--jauneClair);
     border-radius: 5px;
-    color:var(--white);
-    box-shadow: 1px 5px 5px gray;
+    color:var(--white);  
+    font-weight: 600;
+    letter-spacing: 1px;  
     padding: 2%;
     margin-top: 5%;
+    text-transform: uppercase;    
 }
 .imgAccueil{
     width: 100%;
@@ -166,14 +181,12 @@ footer{
 .titreGridPageAcc{
     margin: 5%;
     line-height: 40px;
-    text-align: justify;
-    font-size: 30px;
-    font-weight: bold;
+    text-align: left;    
 }
 .texteGridPageAcc{
     margin: 5%;
     line-height: 40px;
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -231,14 +244,18 @@ footer{
     object-fit: cover; 
     align-self: center;    
 }
-.ajouter{
+.boutiqueProduits > article > a{
     background-color: var(--jauneClair);
-    box-shadow: 1px 5px 5px gray;
-    margin: 3%;
-    padding: 3%;
-    color: var(--white);
-    font-weight: bold;
     border-radius: 5px;
+    box-shadow: 1px 5px 5px gray;
+    color: var(--white);
+    font-weight: 600;
+    margin: 3%;
+    padding: 3%;  
+    text-transform: none;       
+}
+.ajouter{
+    text-transform: none;
 }
 /***********************************************PAGE BOUTIQUE**************************************************/
 .produitContenu{
@@ -708,9 +725,6 @@ textarea{
     }
     .slide{
         height:150px;
-    }
-    .nosProduitsTitre{
-        font-size: 20px;
     }
     .notreActivite{
         display: flex;
