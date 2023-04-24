@@ -25,7 +25,7 @@
     <!----------------------SLIDE-------------------->
     <section class="slide">
       <div class="titres">
-        <div class="contact">Mon Panier</div>
+        <h1 class="contact">Mon Panier</h1>
       </div>
     </section>
   </header>

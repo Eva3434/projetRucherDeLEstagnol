@@ -25,7 +25,7 @@
     <!----------------------SLIDE-------------------->
     <section class="slide">
       <div class="titres">
-        <div class="qsn">Qui sommes nous ?</div>
+        <h1 class="qsn">Qui sommes nous ?</h1>
       </div>
     </section>
   </header>

@@ -24,7 +24,7 @@
     <!----------------------SLIDE-------------------->
     <section class="slide">
       <div class="titres">
-        <div class="galerie">Galerie</div>
+        <h1  class="galerie">Galerie</h1>
       </div>
     </section>
   </header>

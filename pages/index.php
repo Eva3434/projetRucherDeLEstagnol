@@ -36,17 +36,17 @@
       <article>
         <img src="../images/imageNosMiels.png" class="imgAccueil" alt=""/>
         <h4 class="categorieAccueil">Nos Miels</h4>
-        <p class="decouvrir">Découvrir</p>
+        <a href="pageBoutique.php?filtre=miels" class="decouvrir">Découvrir</a>
       </article>
       <article>
         <img src="../images/imagesNosAutres.png" class="imgAccueil" alt=""/>
         <h4 class="categorieAccueil">Nos Produits de la Ruche</h4>
-        <p class="decouvrir">Découvrir</p>
+        <a href="pageBoutique.php?filtre=ruche" class="decouvrir">Découvrir</a>
       </article>
       <article>
         <img src="../images/imageNosCoffrets.png" class="imgAccueil" alt="" />
         <h4 class="categorieAccueil">Nos Coffrets</h4>
-        <p class="decouvrir">Découvrir</p>
+        <a href="pageBoutique.php?filtre=coffrets" class="decouvrir">Découvrir</a>
       </article>
     </section>
   </section>

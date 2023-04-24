@@ -25,7 +25,7 @@
     <!----------------------SLIDE-------------------->
     <section class="slide">
       <div class="titres">
-        <div class="nosMiels">Nos miels</div>
+        <h1 class="nosMiels">Nos produits</h1>
       </div>
     </section>
   </header>

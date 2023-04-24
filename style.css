@@ -30,7 +30,9 @@ h4 {
     font-weight: 600;
     text-transform: uppercase;
 }
-
+p {
+    font-size: 16px;
+}
 
 /********************NAVBAR**************************/
 nav a {    
@@ -143,23 +145,30 @@ footer{
     text-align: center;
 }
 .nosProduitsGrid > article {
-    padding: 5%;
+    padding-top: 20px;
+    padding-bottom: calc(20px + 10px);
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0% 5%;
     border-radius: 5px;
     background-color: var(--jaunepale);
 }
 .categorieAccueil{
-    margin-top: 5%;
+    margin-top: 20px;
+    margin-bottom: calc(20px + 16px);
     font-weight: bold;
 }
 .decouvrir{
     background-color: var(--jauneClair);
+    border: none;
     border-radius: 5px;
     color:var(--white);  
+    font-size: 16px;
     font-weight: 600;
-    letter-spacing: 1px;  
-    padding: 2%;
-    margin-top: 5%;
+    letter-spacing: 2px;  
+    padding: 16px 80px;
+    margin-top: 50px;
+    text-decoration: none;
     text-transform: uppercase;    
 }
 .imgAccueil{
@@ -214,7 +223,6 @@ footer{
     color: black;  
     text-transform: uppercase;
     font-weight: bold;
-    box-shadow: 1px 5px 5px gray;
 }
 /********************PRODUITS*********************/
 .boutiqueProduits{
@@ -235,28 +243,32 @@ footer{
     font-weight: bold;   
 }
 .boutiqueNomProduit{
-    margin: 3%;
+    margin-top: 15px;
     text-transform: capitalize;
 }
+.boutiquePrix {
+    margin-top: 15px;
+}
 .imgBoutique{
-    width: 50%;  
-    height: 50%;
+    width: 250px;  
+    height: 250px;
     object-fit: cover; 
     align-self: center;    
 }
 .boutiqueProduits > article > a{
     background-color: var(--jauneClair);
+    border: none;
     border-radius: 5px;
-    box-shadow: 1px 5px 5px gray;
-    color: var(--white);
+    color:var(--white);  
+    font-size: 16px;
     font-weight: 600;
-    margin: 3%;
-    padding: 3%;  
-    text-transform: none;       
+    letter-spacing: 2px;  
+    padding: 16px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    text-transform: uppercase;         
 }
-.ajouter{
-    text-transform: none;
-}
+
 /***********************************************PAGE BOUTIQUE**************************************************/
 .produitContenu{
     margin : 5% 10%;
@@ -571,18 +583,24 @@ textarea{
     object-fit: fill;    
 }
 /***********************************************PAGE READ PRODUITS*************************************************/
-.readTableau{
-    margin: auto;
+.readTableau{    
     background-color: var(--jaunepale);
-    padding: 1%;
     border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    width: 800px;
+    height: auto;
 }
-
+.trTitreColonne > td {
+    font-weight: 600;
+    padding-bottom: 20px;
+}
 .boutonAjoutProduitRead{
+    margin: 50px 0;
     text-align: center;
 }
 .ajouterProduitBouton{
-    padding: 0.5%;  
+    padding: 16px 80px;  
     background-color: var(--jaune);
     font-weight: bold;      
     text-decoration: none;
