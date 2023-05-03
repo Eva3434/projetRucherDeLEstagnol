@@ -1,6 +1,6 @@
 <?php
 require('../PHP/phpGestionModifierProduits.php');
-$title = "Rucher de l'Estagnol - Ajout Produit";
+$title = "Rucher de l'Estagnol - ModificationS Produit";
 $metaDescription = "";
 require('../elements/doctype.php')
 
@@ -26,7 +26,8 @@ require('../elements/doctype.php')
 <section>
   <legend class="modifierTitre">Vous modifiez : <?= $produit['nom_produit'] ?></legend>
 
-  <form enctype="multipart/form-data" action="../PHP/phpGestionModifierProduits.php?id=<?= $produit['id_produit'] ?>" class="form_modifier" method="POST">
+  <form enctype="multipart/form-data" action="../PHP/phpGestionModifierProduits.php?id=<?= $produit['id_produit'] ?>" 
+    class="form_modifier" method="POST">
     <input type="hidden" name="form_modifier" value="1"> 
     <input type="hidden" name="id_produit" value="<?= $produit['id_produit'] ?>">
 

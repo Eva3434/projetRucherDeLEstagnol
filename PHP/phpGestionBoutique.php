@@ -19,7 +19,7 @@
             <img src="../images/imagesProduits/' .$produit['image_produit'] .'" class="imgBoutique"> 
             <p class="boutiqueNomProduit">' . $produit['nom_produit'] . '</p>
             <p class="boutiquePrix">' . number_format($produit['prix_produit'], 2, ',', ' ') . '€</p>
-            <a class="ajouter">Afficher le produit</a>
+            <a href="pageProduit.php?selectionner='. $produit['id_produit'] .'" "class="ajouter">Afficher le produit</a> 
             </article>';          
         }
         }
@@ -30,7 +30,7 @@
             <img src="../images/imagesProduits/' .$produit['image_produit'] .'" class="imgBoutique"> 
             <p class="boutiqueNomProduit">' . $produit['nom_produit'] . '</p>
             <p class="boutiquePrix">' . number_format($produit['prix_produit'], 2, ',', ' ') . '€</p>
-            <a href="../pages/pageProduit.php" class="ajouter">Afficher le produit</a>
+            <a href="pageProduit.php?selectionner='. $produit['id_produit'] .'" "class="ajouter">Afficher le produit</a> 
             </article>';          
         }
         }
@@ -41,7 +41,7 @@
             <img src="../images/imagesProduits/' .$produit['image_produit'] .'" class="imgBoutique"> 
             <p class="boutiqueNomProduit">' . $produit['nom_produit'] . '</p>
             <p class="boutiquePrix">' . number_format($produit['prix_produit'], 2, ',', ' ') . '€</p>
-            <a class="ajouter">Afficher le produit</a>
+            <a href="pageProduit.php?selectionner='. $produit['id_produit'] .'" "class="ajouter">Afficher le produit</a> 
             </article>';          
         }
     }

@@ -18,8 +18,10 @@ require('../PHP/connect.php');
                     $_SESSION['message'] = '<p class="messageAjout">Extension non autorisée</p>';
                 } else {
                     // On ajoute les informations dans la BDD
-                    $insert = $bdd->prepare("INSERT INTO produits(nom_produit, description_produit, prix_produit, stock_produit, image_produit, id_categorie)
-                                            VALUES(:nom_produit, :description_produit, :prix_produit, 10, :image_produit, :id_categorie);");
+                    $insert = $bdd->prepare("INSERT INTO produits(nom_produit, description_produit, prix_produit, 
+                                            stock_produit, image_produit, id_categorie)
+                                            VALUES(:nom_produit, :description_produit, :prix_produit, 10,
+                                             :image_produit, :id_categorie);");
                     $insert->bindParam(":nom_produit", $_POST['ajoutArticleNom']);
                     $insert->bindParam(":description_produit", $_POST['ajoutArticleDescription']);
                     $insert->bindParam(":prix_produit", $_POST['ajoutArticlePrix']);

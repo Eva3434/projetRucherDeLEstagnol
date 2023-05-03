@@ -6,10 +6,10 @@
   <form class="formModal" action="../PHP/phpGestionConnexion.php" method="POST">
     <input type="hidden" name="formModal" value="1" />
     <label>E-mail :</label>
-    <input type="text" name="email_connexion" />
+    <input type="text" name="email_connexion"  aria-label="Saisisez votre e-mail"/>
     <label>Mot de passe :</label>
-    <input type="password" name="mot_de_passe_connexion" />
-    <input type="submit" value="Connexion" class="boutonModal" />
+    <input type="password" name="mot_de_passe_connexion"  aria-label="Saisisez votre mot de passe"/>
+    <input type="submit" value="Connexion" class="boutonModal"  aria-label="Connexion"/>
     <a href="#inscription" class="boutonInscription">Créer un compte</a>
   </form>
 </section>
@@ -23,13 +23,13 @@
     <form action="../PHP/phpGestionInscription.php" class="formInscription" method="POST">
       <input type="hidden" name="formInscription" value="1" />
       <label>Nom :</label>
-      <input type="text" name="nom_inscription" />
+      <input type="text" name="nom_inscription"  aria-label="Saisisez votre nom"/>
       <label>Prénom :</label>
-      <input type="text" name="prenom_inscription" />
+      <input type="text" name="prenom_inscription"  aria-label="Saisisez votre prénom" />
       <label>E-mail :</label>
-      <input type="text" name="email_inscription" />
+      <input type="text" name="email_inscription"  aria-label="Saisisez votre e-mail"/>
       <label>Mot de passe :</label>
-      <input type="password" name="mot_de_passe_inscription" />
+      <input type="password" name="mot_de_passe_inscription"  aria-label="Saisisez votre mot de passe" />
       <input type="submit" value="Créer le compte" class="boutonModalInsc" />
     </form>
   </section>
